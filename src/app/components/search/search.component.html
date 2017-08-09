@@ -1,1 +1,13 @@
-Search Component
+<h1>Miss your spotify lyrics?</h1>
+<p>We do too. Now you can use this app for Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem architecto minus rerum quod vitae quas dolore excepturi facilis cumque quibusdam, ipsum iure vel. Odio asperiores, minus, quibusdam necessitatibus deleniti nemo.</p>
+<form action="">
+    <div class="form-group">
+        <input 
+            type="text" 
+            name="searchStr" 
+            [(ngModel)]="searchStr" 
+            class="form-control" 
+            placeholder="Search Music..."
+            (keyup)="searchMusic()" >
+    </div>
+</form>
