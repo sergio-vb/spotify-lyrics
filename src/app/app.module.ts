@@ -25,7 +25,7 @@ import { SearchComponent } from './components/search/search.component';
         component: AboutComponent
       }
     ])],
-  declarations: [ AppComponent, NavbarComponent, AboutComponent, SearchComponent ],
+  declarations: [ AppComponent, NavbarComponent, AboutComponent, SearchComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
