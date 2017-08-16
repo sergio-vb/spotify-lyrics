@@ -18,13 +18,12 @@ export class SearchComponent{
     searchMusic(){
         //console.log("Searching for music:", this.searchStr);
         this._spotifyService.getToken()
-         .subscribe(res => {
-             this._spotifyService.searchMusic(this.searchStr ,'artist' , res.access_token)
-               .subscribe(res=> {
-                    //console.log("Search response: ", res); 
-                    this.searchRes = res.artists.items;
+            .subscribe(res => {
+                this._spotifyService.searchMusic(this.searchStr ,'artist' , res.access_token)
+                    .subscribe(res=> {
+                        //console.log("Search response: ", res); 
+                        this.searchRes = res.artists.items;
+                    })
             })
-         })
-       
     }
 }
